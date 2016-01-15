@@ -25,6 +25,9 @@ class StdOutWrapper(object):
     def write(self, s):
         stdout_logger.info(s.strip())
 
+    def flush(self):
+        pass
+
 class StdErrWrapper(object):
     """
     Wrapper for stderr
